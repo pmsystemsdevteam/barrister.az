@@ -1,0 +1,139 @@
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../../font/Poppins-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../../font/Poppins-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../font/Poppins-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../../font/Poppins-SemiBold.ttf");
+
+}
+#registerSection {
+    // background-color: red;
+    @include Myflex();
+    // height: 80vh;
+
+    .leftBox {
+        height: 100%;
+        background-color: #A97E4F;
+        width: 100% !important;
+        @include Myflex();
+        flex-direction: column;
+        gap: 40px;
+        color: white;
+        font-family: "Poppins-Light";
+        padding: 50px 0px;
+
+        h2 {
+            font-size: 40px;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 17px;
+            max-width: 80%;
+            text-align: center;
+
+        }
+
+        button {
+            padding: 13px 40px;
+            color: white;
+            background-color: #1a1a1a;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    // .rightBox {
+    //     height: 100%;
+    //     font-family: "Poppins-Light";
+    //     width: 50%;
+    //     // background-image: url(https://preview.colorlib.com/theme/course/images/course_1.jpg.webp);
+        
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+    //     @include Myflex();
+    //     flex-direction: column;
+    //     gap: 40px;
+
+    //     h2 {
+    //         font-size: 40px;
+    //         color: #1a1a1a;
+    //         text-align: center;
+
+    //     }
+
+    //     form {
+    //         width: 80%;
+    //         display: flex;
+    //         flex-direction: column;
+    //         gap: 20px;
+
+    //         input {
+    //             padding: 10px;
+    //             width: 100%;
+    //             border: 1px solid #1a1a1a;
+    //             outline: none;
+    //             font-family: "Poppins-Light";
+
+    //             &:focus {
+    //                 border: 2px solid #A97E4F;
+
+    //             }
+    //         }
+
+    //         button {
+    //             width: 100%;
+    //             padding: 17px;
+    //             border: none;
+    //             background-color: #A97E4F;
+    //             color: white;
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
+
+}
+
+@media only screen and (max-width: 760px) {
+    #registerSection {
+        // height: 200vh;
+        flex-direction: column;
+
+        .leftBox {
+            width: 100%;
+        }
+
+        .rightBox {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../../font/Poppins-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../../font/Poppins-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../font/Poppins-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../../font/Poppins-SemiBold.ttf");
+
+}
+
+#upcomingSection {
+    background-color: #ffffff;
+    padding: 50px 0px;
+
+    .upBox {
+        z-index: 2;
+        @include Myflex();
+        flex-direction: column;
+        text-align: center;
+        font-family: "Poppins-Bold";
+
+
+        .line {
+            background-color: #A97E4F;
+            width: 50px;
+            height: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 40px;
+            color: black;
+
+        }
+    }
+
+    .downBox {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .cart {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-family: "Poppins-SemiBold";
+            flex-direction: column;
+            width: 600px;
+            border: 2px solid #A97E4F;
+
+            .middleBox {
+                color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+
+                h1 {
+                    transition: 0.5s;
+                    font-family: "Poppins-Medium";
+                }
+
+                h1:hover {
+                    transition: 0.5s;
+                    color: #A97E4F;
+                }
+
+                span {
+                    margin-top: 20px;
+                    color: gray;
+                }
+            }
+
+            .imageBox {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    #upcomingSection {
+
+
+        .upBox {
+            margin-bottom: 20px;
+
+        }
+
+        .downBox {
+
+
+            .cart {
+width: 300px;
+
+                .middleBox {
+                    width: 100%;
+
+                }
+
+            }
+        }
+    }
+}

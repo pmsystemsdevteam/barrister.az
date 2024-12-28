@@ -1,0 +1,72 @@
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../../font/Poppins-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../../font/Poppins-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../font/Poppins-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../../font/Poppins-SemiBold.ttf");
+
+}
+
+footer {
+    @include Myflex();
+    background-color: #1a1a1a;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+    color: gray;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Poppins-Medium";
+
+    .iconBox {
+        display: flex;
+        color: white;
+        gap: 20px;
+        text-align: center;
+        @include Myflex();
+
+        p {
+            transition: 0.3s;
+        }
+
+        p:hover {
+            transition: 0.3s;
+            color: #A97E4F;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 834px) {
+    footer {
+        flex-direction: column;
+    }
+}

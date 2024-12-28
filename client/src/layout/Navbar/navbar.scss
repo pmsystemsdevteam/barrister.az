@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../font/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../../font/Poppins-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../../font/Poppins-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../font/Poppins-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../../font/Poppins-SemiBold.ttf");
+
+}
+
+nav {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    @include Myflex();
+    margin-top: 50px;
+    position: fixed;
+    z-index: 99;
+    font-family: "Poppins-Light";
+
+    img {
+        max-width: 100px;
+    }
+
+    .selectBox {
+        // margin-left: 20px;
+        font-family: "Poppins-Regular";
+        position: relative;
+        cursor: pointer;
+
+        .mainLang {
+            @include Myflex();
+
+        }
+
+        .allLangsBox {
+            position: absolute;
+            display: none;
+            width: 100%;
+        }
+
+        .opened {
+            display: block;
+        }
+    }
+
+    .navbarLeftBox {
+        display: flex;
+        background-color: white;
+        padding: 30px 60px;
+        gap: 50px;
+        -webkit-box-shadow: -16px 5px 70px 15px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -16px 5px 70px 15px rgba(0, 0, 0, 0.44);
+        box-shadow: -16px 5px 70px 15px rgba(0, 0, 0, 0.44);
+        height: 130px;
+        width: 55%;
+
+
+        .iconBox {
+            @include Myflex();
+            gap: 17px
+        }
+
+        .textBox {
+            @include Myflex();
+            gap: 20px;
+
+            ul {
+                font-size: 20px;
+                display: flex;
+                list-style: none;
+                gap: 20px;
+
+                li {
+                    .link {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &:hover {
+                        color: #A97E4F;
+                        cursor: pointer;
+                        font-family: "Poppins-Medium";
+
+                    }
+                }
+            }
+        }
+
+        .menuBox {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+    }
+
+    .navbarRightBox {
+        @include Myflex();
+        padding: 31px 25px;
+        background-color: #A97E4F;
+        gap: 15px;
+        color: white;
+        -webkit-box-shadow: -16px 5px 70px 15px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -16px 0px 70px 15px rgba(0, 0, 0, 0.44);
+        box-shadow: 0px 5px 70px 15px rgba(0, 0, 0, 0.44);
+        height: 130px;
+        font-family: "Poppins-Regular";
+
+    }
+
+    .respNavbar {
+        display: none;
+        background-color: white;
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        padding: 0px 30px;
+        gap: 20px;
+        flex-direction: column;
+
+        .closeBtn {
+            font-size: 40px;
+            position: absolute;
+            top: 50px;
+            right: 70px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .closeBtn:hover {
+            color: #A97E4F;
+            transition: 0.3s;
+
+        }
+
+        ul {
+            @include Myflex();
+            flex-direction: column;
+            align-items: start;
+            font-size: 20px;
+            list-style: none;
+            gap: 10px;
+            font-size: 40px;
+
+            li {
+                .link {
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.3s;
+
+                }
+
+                .link:hover {
+                    color: #A97E4F;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .iconsBox {
+            display: flex;
+            gap: 20px;
+
+            p {
+                @include Myflex();
+
+                transition: 0.3s;
+                color: black;
+            }
+
+            p:hover {
+                transition: 0.3s;
+                color: #A97E4F;
+            }
+        }
+
+    }
+
+    .openNavbar {
+        @include Myflex();
+
+    }
+}
+
+
+@media only screen and (max-width: 1240px) {
+    nav {
+        .navbarLeftBox {
+            width: 100%;
+            padding: 30px;
+            justify-content: space-between;
+
+            .textBox {
+                display: none;
+            }
+
+            .menuBox {
+                @include Myflex();
+
+            }
+        }
+
+        .navbarRightBox {
+            display: none
+        }
+
+        .respNavbar {
+            align-items: start;
+            flex-direction: column;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    nav {
+        .respNavbar {
+            width: 100%;
+            padding: 0px 70px;
+
+            .closeBtn {
+                right: 50px;
+            }
+        }
+    }
+}

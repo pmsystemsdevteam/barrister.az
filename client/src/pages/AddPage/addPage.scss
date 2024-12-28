@@ -1,0 +1,102 @@
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+.notMean {
+    height: 190px;
+    background-color: #333333;
+}
+
+.addPage {
+    padding: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    @include Myflex();
+    Form {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 320px;
+        .errorBox {
+            color: red;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 15px;
+            padding: 12px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #A97E4F;
+            color: #333333;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    table {
+        thead {
+            tr {
+                th {
+                    width: 90px;
+                    height: 50px;
+                    border: 1px solid black;
+color: #333333;
+                }
+
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 0px 10px;
+                    width: 90px;
+                    height: 50px;
+                    border: 1px solid black;
+
+                    button {
+                        border: none;
+                        background-color: red;
+                        padding: 11px;
+                        cursor: pointer;
+                        color: white;
+                    }
+                }
+
+            }
+
+        }
+    }
+    .SearchBox{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input{
+            padding: 12px;
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+            button{
+                width: 60px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                background-color: #333333;
+                color: #A97E4F;
+            }
+        }
+       
+    }
+
+}

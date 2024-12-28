@@ -1,0 +1,69 @@
+@mixin Myflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//   @include Myflex();
+#ourServicesSection {
+    padding: 50px 0px;
+
+    .upBox {
+        z-index: 2;
+        @include Myflex();
+        flex-direction: column;
+        text-align: center;
+
+        .line {
+            background-color: #A97E4F;
+            width: 50px;
+            height: 2px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 40px;
+            color: black;
+        }
+    }
+
+    .downBox {
+        margin-top: 50px;
+        padding: 0px 100px;
+        @include Myflex();
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .cart {
+            padding: 20px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            i {
+                font-size: 40px;
+                color: #A97E4F;
+            }
+
+            p {
+                color: black;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            span {
+                color: gray;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 537px) {
+    #ourServicesSection {
+        .downBox {
+            padding: 0px 0px;
+        }
+    }
+}
