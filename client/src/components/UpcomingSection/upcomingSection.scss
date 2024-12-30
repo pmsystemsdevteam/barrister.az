@@ -6,31 +6,31 @@
 
 //   @include Myflex();
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../../font/Poppins-Bold.ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../../font/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url("../../font/Poppins-Light.ttf");
-
-}
-
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../../font/Poppins-Medium.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../../font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../../font/Poppins-Regular.ttf");
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("../../font/Poppins-SemiBold.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../../font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../../font/Montserrat-SemiBold.ttf");
 
 }
 
@@ -43,8 +43,9 @@
         @include Myflex();
         flex-direction: column;
         text-align: center;
-        font-family: "Poppins-Bold";
+        font-family: "Montserrat-Bold";
 
+        margin-bottom: 40px;
 
         .line {
             background-color: #A97E4F;
@@ -70,7 +71,7 @@
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            font-family: "Poppins-SemiBold";
+            font-family: "Montserrat-Medium";
             flex-direction: column;
             width: 600px;
             border: 2px solid #A97E4F;
@@ -84,7 +85,7 @@
 
                 h1 {
                     transition: 0.5s;
-                    font-family: "Poppins-Medium";
+                    font-family: "Montserrat-Medium";
                 }
 
                 h1:hover {
@@ -120,7 +121,7 @@
 
 
             .cart {
-width: 300px;
+                width: 300px;
 
                 .middleBox {
                     width: 100%;

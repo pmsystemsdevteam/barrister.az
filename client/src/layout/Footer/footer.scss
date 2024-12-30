@@ -6,31 +6,31 @@
 
 //   @include Myflex();
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../../font/Poppins-Bold.ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../../font/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url("../../font/Poppins-Light.ttf");
-
-}
-
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../../font/Poppins-Medium.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../../font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../../font/Poppins-Regular.ttf");
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("../../font/Poppins-SemiBold.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../../font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../../font/Montserrat-SemiBold.ttf");
 
 }
 
@@ -43,7 +43,7 @@ footer {
     color: gray;
     flex-wrap: wrap;
     gap: 20px;
-    font-family: "Poppins-Medium";
+    font-family: "Montserrat-Medium";
 
     .iconBox {
         display: flex;

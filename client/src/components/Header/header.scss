@@ -6,33 +6,34 @@
 
 //   @include Myflex();
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../../font/Poppins-Bold.ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../../font/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url("../../font/Poppins-Light.ttf");
-
-}
-
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../../font/Poppins-Medium.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../../font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../../font/Poppins-Regular.ttf");
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("../../font/Poppins-SemiBold.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../../font/Montserrat-Regular.ttf");
 
 }
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../../font/Montserrat-SemiBold.ttf");
+
+}
+
 
 header {
     // background-color: red;
@@ -55,16 +56,16 @@ header {
             padding: 200px 0px;
 
             .upBox {
-                
+
                 h1 {
                     display: flex;
                     color: white;
                     font-size: 60px;
                     gap: 10px;
-                    font-family: "Poppins-Light";
+                    font-family: "Montserrat-SemiBold";
 
                     p {
-                        font-family: "Poppins-Bold" !important;
+                        font-family: "Poppins-SemiBold" !important;
                         background-color: #A97E4F;
                     }
                 }
@@ -95,9 +96,10 @@ header {
                         @include Myflex();
                         align-items: start;
 
-                        font-family: "Poppins-Light";
+                        font-family: "Montserrat-Light";
+
                         h1 {
-                            font-size: 30px;
+                            font-size: 20px;
 
                             color: white;
 
@@ -173,7 +175,7 @@ header {
 
                 .upBox {
                     h1 {
-                        font-size: 20px;
+                        font-size: 30px;
                     }
                 }
             }

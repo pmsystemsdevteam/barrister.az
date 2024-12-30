@@ -6,31 +6,31 @@
 
 //   @include Myflex();
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../../font/Poppins-Bold.ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../../font/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url("../../font/Poppins-Light.ttf");
-
-}
-
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../../font/Poppins-Medium.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../../font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../../font/Poppins-Regular.ttf");
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("../../font/Poppins-SemiBold.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../../font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../../font/Montserrat-SemiBold.ttf");
 
 }
 
@@ -47,7 +47,7 @@
         flex-direction: column;
         gap: 40px;
         color: white;
-        font-family: "Poppins-Light";
+        font-family: "Montserrat-Light";
 
         h2 {
             font-size: 40px;
@@ -73,7 +73,7 @@
 
     .rightBox {
         height: 100%;
-        font-family: "Poppins-Light";
+        font-family: "Montserrat-Light";
 
         width: 50%;
         // background-image: url(https://preview.colorlib.com/theme/course/images/course_1.jpg.webp);
@@ -103,7 +103,7 @@
                 width: 100%;
                 border: 1px solid #1a1a1a;
                 outline: none;
-                font-family: "Poppins-Light";
+                font-family: "Montserrat-Light";
 
                 &:focus {
                     border: 2px solid #A97E4F;
@@ -116,7 +116,7 @@
                 width: 100%;
                 border: 1px solid #1a1a1a;
                 outline: none;
-                font-family: "Poppins-Light";
+                font-family: "Montserrat-Light";
                 height: 150px;
 
                 &:focus {
@@ -131,6 +131,7 @@
                 border: none;
                 background-color: #A97E4F;
                 color: white;
+                font-family: "Montserrat-Light";
                 cursor: pointer;
             }
         }

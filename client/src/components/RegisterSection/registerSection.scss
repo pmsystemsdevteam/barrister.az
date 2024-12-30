@@ -6,31 +6,31 @@
 
 //   @include Myflex();
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("../../font/Poppins-Bold.ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../../font/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Poppins-Light";
-    src: url("../../font/Poppins-Light.ttf");
-
-}
-
-@font-face {
-    font-family: "Poppins-Medium";
-    src: url("../../font/Poppins-Medium.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../../font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("../../font/Poppins-Regular.ttf");
+    font-family: "Montserrat-Medium";
+    src: url("../../font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
-    font-family: "Poppins-SemiBold";
-    src: url("../../font/Poppins-SemiBold.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../../font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../../font/Montserrat-SemiBold.ttf");
 
 }
 #registerSection {
@@ -46,7 +46,7 @@
         flex-direction: column;
         gap: 40px;
         color: white;
-        font-family: "Poppins-Light";
+        font-family: "Montserrat-Light";
         padding: 50px 0px;
 
         h2 {
@@ -130,6 +130,15 @@
 
         .leftBox {
             width: 100%;
+            h2{
+             font-size: 30px;
+             max-width: 100%;
+
+            }
+            p{
+             max-width: 100%;
+
+            }
         }
 
         .rightBox {
